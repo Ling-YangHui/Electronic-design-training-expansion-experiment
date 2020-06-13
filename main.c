@@ -287,6 +287,7 @@ void main()
     TimerSet(50);
     SerialSet(9600);
     SerialBegin();
+    num_init();
     Trig = LOW;
     TMOD |= 0x01;
     open();
