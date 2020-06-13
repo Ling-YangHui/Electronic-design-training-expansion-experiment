@@ -288,11 +288,12 @@ void main()
     SerialSet(9600);
     SerialBegin();
     num_init();
-    
+
     Trig = LOW;
     TMOD |= 0x01;
     open();
     BeginTimer();
+    Beep = HIGH;
     while(1)
     {
         if (order_state == 1)
